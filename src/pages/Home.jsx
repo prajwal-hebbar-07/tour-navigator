@@ -1,13 +1,14 @@
 import { Box, Container, Grid, Typography } from "@mui/material";
 
 import cities from "../data.json";
+import TourCard from "../components/TourCard";
 
 const Home = () => {
   return (
     <>
-      <Container maxWidth="md">
+      <Container maxWidth="lg">
         {cities.map((city) => (
-          <Box key={city.id}>
+          <Box key={city.id} pt={2} pb={2}>
             <Typography
               variant="h3"
               component="h2"
@@ -19,7 +20,7 @@ const Home = () => {
             </Typography>
             <Grid container spacing={2}>
               {city.tours.map((tour) => (
-                <p>{tour.name}</p>
+                <TourCard tour={tour} />
               ))}
             </Grid>
           </Box>

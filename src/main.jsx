@@ -18,6 +18,27 @@ const theme = createTheme({
       main: "#e64833",
       contrastText: "#fff",
     },
+    grey: {
+      main: "#808080",
+    },
+  },
+  components: {
+    MuiTypography: {
+      variants: [
+        {
+          props: {
+            variant: "body3",
+          },
+          style: {
+            fontFamily: "Roboto",
+            fontSize: "12px",
+          },
+        },
+      ],
+    },
+  },
+  typography: {
+    fontFamily: "Roboto",
   },
 });
 
