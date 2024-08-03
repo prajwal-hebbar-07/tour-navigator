@@ -1,11 +1,15 @@
-import { Typography } from "@mui/material";
 import { Outlet } from "react-router-dom";
+import { Box, Container } from "@mui/material";
+
+import NavBar from "../components/NavBar";
 
 const RootLayout = () => {
   return (
     <>
-      <Typography variant="h1">Root Layout</Typography>
-      <Outlet />
+      <NavBar />
+      <Box mt={10}>
+        <Outlet />
+      </Box>
     </>
   );
 };
