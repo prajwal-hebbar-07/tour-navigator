@@ -17,7 +17,7 @@ function App() {
           element: <Home />,
         },
         {
-          path: ":id",
+          path: ":place/:id",
           element: <TourDetails />,
         },
       ],
